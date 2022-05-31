@@ -1,0 +1,8 @@
+D:\Projects\Commands>git init
+D:\Projects\Commands>git add .
+D:\Projects\Commands>git status
+D:\Projects\Commands>git commit -m "new python commands added"
+D:\Projects\Commands>git status
+D:\Projects\Commands>git remote add origin https://github.com/vyavaharesagar/Commands.git
+D:\Projects\Commands>git push -u origin master
+D:\Projects\Commands>git status
