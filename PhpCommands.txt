@@ -1,0 +1,2 @@
+to run the server from anywhere
+	php -S localhost:8000
