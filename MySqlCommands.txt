@@ -1,0 +1,47 @@
+mysqldump -u [user name] –p [password] [options] [database_name] [tablename] > [dumpfilename.sql]
+
+mysqldump -u ltssecure2020 -p threat_hub > threat_hub_dump.sql
+
+ORDER BY
+
+	SELECT * FROM Customers ORDER BY Country;
+	SELECT * FROM Customers ORDER BY Country DESC;
+	SELECT * FROM Customers ORDER BY Country, CustomerName;
+
+SELECT * FROM ( SELECT * FROM bad_ips ORDER BY id DESC LIMIT 10 ) Var1 ORDER BY id ASC;
+
+delete FROM bad_ips where id in('198192','198193','198194','198195','198196','198197','198198','198199','198200','198201');
+
+SELECT * FROM ( SELECT * FROM malware_hashes ORDER BY id DESC LIMIT 10 ) Var1 ORDER BY id ASC;
+
+delete FROM bad_ips where id in('9893','9894','9895','9896','9897');  //we have to add it again
+
+delete FROM malware_hashes where id in('9893','9894','9895','9896','9897');  //we have to add it again
+
+SELECT * FROM bad_ips where id in('9893','9894','9895','9896','9897');
+
+---------------------------------------------------------------------
+
+How do I import an SQL file using the command line in MySQL?
+	Try:
+
+mysql -u username -p database_name < file.sql
+Check MySQL Options.
+
+Note 1: It is better to use the full path of the SQL file file.sql.
+
+Note 2: Use -R and --triggers to keep the routines and triggers of original database. They are not copied by default.
+
+Note 3 You may have to create the (empty) database from MySQL if it doesn't exist already and the exported SQL don't contain CREATE DATABASE (exported with --no-create-db or -n option), before you can import it.
+
+--------------------------------------------------------------------------------
+
+drop table table_name;
+
+--------------------------------------------------------
+
+create table from fetching data from another table
+ 
+CREATE TABLE bad_ips_new SELECT * FROM bad_ips where id in('9893','9894','9895','9896','9897');
+
+-------------------------------------------------------------

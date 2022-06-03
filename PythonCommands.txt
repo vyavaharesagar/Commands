@@ -2,6 +2,7 @@ python -m pip freeze > requirements.txt
 
 to create virtual environment
 	virtualenv venv
+	python -m virtualenv venv
 
 to activate virtual environment
 cd venv/Scripts
@@ -10,3 +11,4 @@ cd venv/Scripts
 to install dependencies
 
 pip install -r requirements.txt
+
