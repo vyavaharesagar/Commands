@@ -1,6 +1,7 @@
 mysqldump -u [user name] –p [password] [options] [database_name] [tablename] > [dumpfilename.sql]
 
 mysqldump -u ltssecure2020 -p threat_hub > threat_hub_dump.sql
+mysqldump -u root -p Local_Survey < best_of_survays_schema.sql
 
 ORDER BY
 

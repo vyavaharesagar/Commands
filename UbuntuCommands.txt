@@ -1,0 +1,9 @@
+change user
+	su <username>
+
+list all applications
+	apt list --installed
+
+see the ports
+
+ps -ef
