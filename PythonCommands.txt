@@ -12,3 +12,32 @@ to install dependencies
 
 pip install -r requirements.txt
 
+String Methods
+
+capitalize()
+lower()
+title()
+upper()
+casefold()
+
+index()
+find()
+
+
+endswith()
+isalpha()
+isalnum()
+isnumeric()
+isascii()
+isdecimal()
+isdigit()	
+islower()
+
+
+
+format()
+
+join()
+replace()
+split()
+strip()
